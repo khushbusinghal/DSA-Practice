@@ -195,6 +195,7 @@ public class Sorting {
         int partitionIndex = low;
         for(int i=low; i<=high; i++)
         {
+            
             if(arr[i]<pivot)
             {
                 int temp = arr[i];
