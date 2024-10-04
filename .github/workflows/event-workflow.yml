@@ -4,10 +4,8 @@ jobs:
     first-job:
        runs-on: ubuntu-latest
        steps:
-        - name: Get Github EventData
-        - run: echo "${{toJson(github.event)}}" 
-        - name: print data
-        - run: echo "hello bye"
+         - name: Get Github EventData
+         - run: echo "${{toJson(github.event)}}"
         
 
 
