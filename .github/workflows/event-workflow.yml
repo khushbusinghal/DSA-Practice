@@ -1,12 +1,13 @@
-name: Issue Creation Event
+name: ISSUE WORKFLOW
 on: issues
 jobs:
-    first-job:
-       runs-on: ubuntu-latest
-       steps:
-         - name: Get Github EventData
-         - run: echo "${{toJson(github.event)}}"
-        
+  first-job1:
+    runs-on: ubuntu-latest
+    steps:
+     - name: print github context
+       run: echo "${{toJSON(github.event)}}"
+     - name: print goodbye
+       run: echo "Good Bye"
 
 
     
